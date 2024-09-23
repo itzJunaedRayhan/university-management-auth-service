@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\successes\\.09076446eddcad15b95c654367cfe4c7b63d654d-audit.json",
+    "files": [
+        {
+            "date": 1727075015139,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\successes\\UM-2024-09-23-13-success.log",
+            "hash": "36c9b497f4289fd61203b0b657ba4aadd5bb57c392c1b251236a640f944c91cc"
+        }
+    ],
+    "hashType": "sha256"
+}
