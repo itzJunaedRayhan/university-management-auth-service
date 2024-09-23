@@ -5,8 +5,9 @@ import app from './app'
 
 const bootstrap = async (): Promise<void> => {
   try {
-    await mongoose.connect(`${config.database_url}`)
+    await mongoose.connect(config.database_url as string)
     console.log('Database connected Successfully...')
+
     app.listen(config.port, () => {
       console.log(`Example app listening on port ${config.port}`)
     })
