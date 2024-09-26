@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import { UserRoutes } from './app/modules/users/users.route';
-import globalErrorHandler from './middleware/globalErrorHandler';
+import globalErrorHandler from './app/middleware/globalErrorHandler';
 const app: Application = express();
 
 //  Parser:
