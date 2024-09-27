@@ -10,6 +10,4 @@ router.post(
   UserController.createUser,
 );
 
-export const UserRoutes = {
-  router,
-};
+export const UserRoutes = router;
