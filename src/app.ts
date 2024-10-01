@@ -1,7 +1,8 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
-import { UserRoutes } from './app/modules/users/users.route';
-import globalErrorHandler from './middleware/globalErrorHandler';
+import routes from './app/routes';
+import globalErrorHandler from './app/middleware/globalErrorHandler';
+import httpStatus from 'http-status';
 const app: Application = express();
 
 //  Parser:
@@ -10,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //  Application Routes:
-app.use('/api/v1/users/', UserRoutes.router);
+app.use('/api/v1/', routes);
 
 //  Testing Routes:
 app.get('/', (req: Request, res: Response) => {
@@ -19,5 +20,19 @@ app.get('/', (req: Request, res: Response) => {
 
 //  Global Error Handler:
 app.use(globalErrorHandler);
+
+//  Handle Not Found:
+app.use((req: Request, res: Response) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'API Not Found',
+      },
+    ],
+  });
+});
 
 export default app;
