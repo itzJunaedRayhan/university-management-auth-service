@@ -1,95 +1,105 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\.47e968eefc8714ae5a0f8b629334bdb262e72c9b-audit.json",
-  "files": [
-    {
-      "date": 1727075015145,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-23-13-error.log",
-      "hash": "d831815bce9ecc97e454882ceb509cf18dfbcb250708aab50c691cf145b76bb7"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1727367148989,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-26-22-error.log",
-      "hash": "87cd3dceac5ae5d5126348d3e5aa9288df685d2da507e1d0a4fd06829ab967d3"
-    },
-    {
-      "date": 1727374215763,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-00-error.log",
-      "hash": "b3e961eab763651592b585ebad3ece28d7f4031cc4c7d111a75f185c82605294"
-    },
-    {
-      "date": 1727408482367,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-09-error.log",
-      "hash": "7d2df5709f6937d6d0f7a3bf542ae3cbef9607fa92676c9111567b417aaf0f1e"
-    },
-    {
-      "date": 1727412750929,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-10-error.log",
-      "hash": "b80593488650668961f11fc114cfda37bf46faac9aa38abde9e6787f7fe14aba"
-    },
-    {
-      "date": 1727413402381,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-11-error.log",
-      "hash": "06fe615646ff3434f5e8302b02153f3e630faac7b8283a21cbcfe8546e7485ea"
-    },
-    {
-      "date": 1727417270648,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-12-error.log",
-      "hash": "5300615ccc30ba2377724540d304e176f6954903b9e8ba0f6e016d57b99fbed7"
-    },
-    {
-      "date": 1727583364195,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-10-error.log",
-      "hash": "364e0fcfad5e1c96f1cc8d66607662be45f497e4e3a9d2887cfde2df622f45cb"
-    },
-    {
-      "date": 1727588271276,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-11-error.log",
-      "hash": "acfe69a05b48193e0d5940d5fb5f1268be53fa17ab534c1007c6586c224170a9"
-    },
-    {
-      "date": 1727590185099,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-12-error.log",
-      "hash": "12729d08d5e4e49d3abb93a29640152c812e56d68cf3c6a31515206a0da6ac42"
-    },
-    {
-      "date": 1727593605939,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-13-error.log",
-      "hash": "bddf7e705c5a09dd9e5924dc40e34d5a5bf0ff53b8a095be265d2726dfdb329c"
-    },
-    {
-      "date": 1727597253247,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-14-error.log",
-      "hash": "a4fd6baac101e0bb853ff7ad7801c7de0486810e5dc8ca06ad13a7379c067748"
-    },
-    {
-      "date": 1727600407017,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-15-error.log",
-      "hash": "d313dd1a505d7f8954e661d7a2d154bb915f8d7a55729a61efffd9fce02662e5"
-    },
-    {
-      "date": 1727604026245,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-16-error.log",
-      "hash": "a0f110980f73b5397dc9067a56f8d9a275e2b67907e4bd22693f3de6f4c620a2"
-    },
-    {
-      "date": 1727667675973,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-30-09-error.log",
-      "hash": "cf787138c5abc723fcf4af50467cb682521bc8fc23d15e6ea89e770b96f55ade"
-    },
-    {
-      "date": 1727668838092,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-30-10-error.log",
-      "hash": "b631e1da0436c97348e779dddb280fc05fe11b7cca110a4d7d076cae0a59ae7b"
-    },
-    {
-      "date": 1727672404402,
-      "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-30-11-error.log",
-      "hash": "262b19e78eceff3f7f3fc813f041c151805f04fd7dbeee558b08942ed48f9f6d"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\.47e968eefc8714ae5a0f8b629334bdb262e72c9b-audit.json",
+    "files": [
+        {
+            "date": 1727075015145,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-23-13-error.log",
+            "hash": "d831815bce9ecc97e454882ceb509cf18dfbcb250708aab50c691cf145b76bb7"
+        },
+        {
+            "date": 1727367148989,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-26-22-error.log",
+            "hash": "87cd3dceac5ae5d5126348d3e5aa9288df685d2da507e1d0a4fd06829ab967d3"
+        },
+        {
+            "date": 1727374215763,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-00-error.log",
+            "hash": "b3e961eab763651592b585ebad3ece28d7f4031cc4c7d111a75f185c82605294"
+        },
+        {
+            "date": 1727408482367,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-09-error.log",
+            "hash": "7d2df5709f6937d6d0f7a3bf542ae3cbef9607fa92676c9111567b417aaf0f1e"
+        },
+        {
+            "date": 1727412750929,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-10-error.log",
+            "hash": "b80593488650668961f11fc114cfda37bf46faac9aa38abde9e6787f7fe14aba"
+        },
+        {
+            "date": 1727413402381,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-11-error.log",
+            "hash": "06fe615646ff3434f5e8302b02153f3e630faac7b8283a21cbcfe8546e7485ea"
+        },
+        {
+            "date": 1727417270648,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-27-12-error.log",
+            "hash": "5300615ccc30ba2377724540d304e176f6954903b9e8ba0f6e016d57b99fbed7"
+        },
+        {
+            "date": 1727583364195,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-10-error.log",
+            "hash": "364e0fcfad5e1c96f1cc8d66607662be45f497e4e3a9d2887cfde2df622f45cb"
+        },
+        {
+            "date": 1727588271276,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-11-error.log",
+            "hash": "acfe69a05b48193e0d5940d5fb5f1268be53fa17ab534c1007c6586c224170a9"
+        },
+        {
+            "date": 1727590185099,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-12-error.log",
+            "hash": "12729d08d5e4e49d3abb93a29640152c812e56d68cf3c6a31515206a0da6ac42"
+        },
+        {
+            "date": 1727593605939,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-13-error.log",
+            "hash": "bddf7e705c5a09dd9e5924dc40e34d5a5bf0ff53b8a095be265d2726dfdb329c"
+        },
+        {
+            "date": 1727597253247,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-14-error.log",
+            "hash": "a4fd6baac101e0bb853ff7ad7801c7de0486810e5dc8ca06ad13a7379c067748"
+        },
+        {
+            "date": 1727600407017,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-15-error.log",
+            "hash": "d313dd1a505d7f8954e661d7a2d154bb915f8d7a55729a61efffd9fce02662e5"
+        },
+        {
+            "date": 1727604026245,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-29-16-error.log",
+            "hash": "a0f110980f73b5397dc9067a56f8d9a275e2b67907e4bd22693f3de6f4c620a2"
+        },
+        {
+            "date": 1727667675973,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-30-09-error.log",
+            "hash": "cf787138c5abc723fcf4af50467cb682521bc8fc23d15e6ea89e770b96f55ade"
+        },
+        {
+            "date": 1727668838092,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-30-10-error.log",
+            "hash": "b631e1da0436c97348e779dddb280fc05fe11b7cca110a4d7d076cae0a59ae7b"
+        },
+        {
+            "date": 1727672404402,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-09-30-11-error.log",
+            "hash": "262b19e78eceff3f7f3fc813f041c151805f04fd7dbeee558b08942ed48f9f6d"
+        },
+        {
+            "date": 1727762205881,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-10-01-11-error.log",
+            "hash": "9a9605843a67c8755fe066d6a877e51f704dc76c32f9244dc1b5d129e6562f34"
+        },
+        {
+            "date": 1727764607883,
+            "name": "C:\\Users\\Junaed Islam\\OneDrive\\Desktop\\university-management-auth\\logs\\winston\\errors\\UM-2024-10-01-12-error.log",
+            "hash": "916dc37116d5bebc65b9b82e9a428eb854f579e4c51936a3b04cb74df015cb43"
+        }
+    ],
+    "hashType": "sha256"
 }
