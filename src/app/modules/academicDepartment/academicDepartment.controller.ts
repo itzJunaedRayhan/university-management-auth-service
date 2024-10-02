@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { Request, Response } from 'express';
 import catchAsync from '../../../shared/catchAsync';
 import { IAcademicDepartment } from './academicDepartment.interface';
@@ -31,7 +30,6 @@ const getAllDepartments = catchAsync(async (req: Request, res: Response) => {
     filters,
     paginationOptions,
   );
-  console.log(filters, paginationOptions, req.query);
   sendResponse<IAcademicDepartment[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
