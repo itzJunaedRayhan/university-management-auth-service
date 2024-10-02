@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { Request, Response } from 'express';
 import catchAsync from '../../../shared/catchAsync';
 import { IAcademicDepartment } from './academicDepartment.interface';
@@ -24,12 +25,13 @@ const createDepartment = catchAsync(async (req: Request, res: Response) => {
 
 //  get all of the Academic Departments:
 const getAllDepartments = catchAsync(async (req: Request, res: Response) => {
-  const filters = pick(req.body, academicDepartmentFilterableFields);
-  const paginationOptions = pick(req.body, paginationFields);
+  const filters = pick(req.query, academicDepartmentFilterableFields);
+  const paginationOptions = pick(req.query, paginationFields);
   const result = await AcademicDepartmentServices.getAllDepartments(
     filters,
     paginationOptions,
   );
+  console.log(filters, paginationOptions, req.query);
   sendResponse<IAcademicDepartment[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
