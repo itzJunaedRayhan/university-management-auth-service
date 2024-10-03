@@ -24,8 +24,6 @@ const createStudent = async (
   const academicSemester = await AcademicSemester.findById(
     student.academicSemester,
   );
-  // eslint-disable-next-line no-console
-  console.log(academicSemester, student.academicSemester);
 
   //  generate student id:
   let newUserAllData = null;
