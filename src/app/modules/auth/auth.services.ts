@@ -1,12 +1,16 @@
-/* eslint-disable no-console */
 import httpStatus from 'http-status';
 import ApiError from '../../../errors/ApiError';
 import { User } from '../users/users.model';
-import { ILoginUser, IRefreshTokenResponse } from './auth.interface';
+import {
+  IChangePassword,
+  ILoginUser,
+  IRefreshTokenResponse,
+} from './auth.interface';
 import config from '../../../config';
-import { Secret } from 'jsonwebtoken';
+import { JwtPayload, Secret } from 'jsonwebtoken';
 import { jwtHelpers } from '../../../helpers/jwtHelper';
 
+//  Login user:
 const loginUser = async (payload: ILoginUser) => {
   const { id, password } = payload;
 
@@ -38,7 +42,6 @@ const loginUser = async (payload: ILoginUser) => {
     config.jwt.refresh_expires_in as string,
   );
 
-  console.log(accessToken, refreshToken, needsPasswordChange);
   return {
     accessToken,
     refreshToken,
@@ -46,6 +49,7 @@ const loginUser = async (payload: ILoginUser) => {
   };
 };
 
+//  Generate a refresh token:
 const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   //verify token
   // invalid token - synchronous
@@ -79,7 +83,39 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   };
 };
 
+//  Change the password:
+const changePassword = async (
+  user: JwtPayload | null,
+  payload: IChangePassword,
+): Promise<void> => {
+  const { oldPassword, newPassword } = payload;
+
+  // checking is user exist
+  const isUserExist = await User.findOne({ id: user?.userId }).select(
+    '+password',
+  );
+
+  if (!isUserExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
+  }
+
+  // checking old password
+  if (
+    isUserExist.password &&
+    !(await User.isPasswordMatched(oldPassword, isUserExist.password))
+  ) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'Old Password is incorrect');
+  }
+
+  isUserExist.password = newPassword;
+  isUserExist.needsPasswordChange = false;
+
+  // updating using save()
+  isUserExist.save();
+};
+
 export const AuthServices = {
   loginUser,
   refreshToken,
+  changePassword,
 };

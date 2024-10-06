@@ -8,6 +8,7 @@ export type IUser = {
   role: string;
   password: string;
   needsPasswordChange: true | false;
+  passwordChangedAt: Date;
   student?: Types.ObjectId | IStudent;
   faculty?: Types.ObjectId | IFaculty;
   admin?: Types.ObjectId | IAdmin;
@@ -22,11 +23,3 @@ export type UserModel = {
     savedPassword: string,
   ): Promise<boolean>;
 } & Model<IUser>;
-
-/*
-//  Creating a type of instance method of User:
-export type IUserMethods = {
-  isUserExist(id: string): Promise<Partial<IUser> | null>;
-  isPasswordMatched(givenPassword: string, savedPassword: string): Promise<boolean>;
-}
-*/

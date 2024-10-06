@@ -24,6 +24,9 @@ const userSchema = new Schema<IUser, UserModel>(
       type: Boolean,
       default: true,
     },
+    passwordChangedAt: {
+      type: Date,
+    },
     student: {
       type: Schema.Types.ObjectId,
       ref: 'Student',
@@ -71,20 +74,10 @@ userSchema.pre('save', async function (next) {
     user.password,
     Number(config.bcrypt_salt_rounds),
   );
+  if (!user.needsPasswordChange) {
+    user.passwordChangedAt = new Date();
+  }
   next();
 });
 
 export const User = model<IUser, UserModel>('User', userSchema);
-
-/*
-//  Creating a instance method of User:
-userSchema.methods.isUserExist = async function (id: string): Promise<Partial<IUser> | null> {
-  const user = await User.findOne({id}, {id: 1, needsPasswordChange: 1, password: 1});
-  return user;
-}
-
-userSchema.methods.isPasswordMatched = async function (givenPassword: string, savedPassword: string): Promise<boolean> {
-  const isMatched = await bcrypt.compare(savedPassword, givenPassword);
-  return isMatched;
-}
-*/
