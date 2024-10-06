@@ -24,8 +24,8 @@ const createDepartment = catchAsync(async (req: Request, res: Response) => {
 
 //  get all of the Academic Departments:
 const getAllDepartments = catchAsync(async (req: Request, res: Response) => {
-  const filters = pick(req.body, academicDepartmentFilterableFields);
-  const paginationOptions = pick(req.body, paginationFields);
+  const filters = pick(req.query, academicDepartmentFilterableFields);
+  const paginationOptions = pick(req.query, paginationFields);
   const result = await AcademicDepartmentServices.getAllDepartments(
     filters,
     paginationOptions,
