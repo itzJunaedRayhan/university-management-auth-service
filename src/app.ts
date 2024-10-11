@@ -12,13 +12,13 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-//  Application Routes:
-app.use('/api/v1/', routes);
-
 //  Testing Routes:
 app.get('/', (req: Request, res: Response) => {
   res.send('Working Successfully...');
 });
+
+//  Application Routes:
+app.use('/api/v1/', routes);
 
 //  Global Error Handler:
 app.use(globalErrorHandler);
