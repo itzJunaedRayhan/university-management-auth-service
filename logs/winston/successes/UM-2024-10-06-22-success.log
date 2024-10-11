@@ -298,3 +298,15 @@
   label: 'UM',
   timestamp: '2024-10-06T16:10:58.742Z'
 }
+{
+  message: 'Database connected Successfully...',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2024-10-06T16:33:44.493Z'
+}
+{
+  message: 'Example app listening on port 5000',
+  level: 'info',
+  label: 'UM',
+  timestamp: '2024-10-06T16:33:44.500Z'
+}
