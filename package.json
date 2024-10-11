@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "src/server.ts",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "dev" : "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build" : "tsc",
+    "start": "node dist/server.js",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint . --fix",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
