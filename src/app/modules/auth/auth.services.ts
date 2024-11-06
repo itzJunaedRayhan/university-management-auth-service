@@ -24,7 +24,7 @@ const loginUser = async (payload: ILoginUser) => {
   // Is Password Matched:
   if (
     isUserExist.password &&
-    !User.isPasswordMatched(password, isUserExist?.password)
+    !(await User.isPasswordMatched(password, isUserExist?.password))
   ) {
     throw new ApiError(httpStatus.NOT_FOUND, 'Password is incorrect...');
   }
